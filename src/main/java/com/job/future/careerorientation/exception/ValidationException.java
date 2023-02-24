@@ -1,4 +1,4 @@
-package daothuan.web.com.travelsocial.exception;
+package com.job.future.careerorientation.exception;
 
 import java.util.ArrayList;
 import java.util.HashMap;

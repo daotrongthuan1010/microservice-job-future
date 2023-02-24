@@ -1,4 +1,4 @@
-package daothuan.web.com.travelsocial.exception.entityerror;
+package com.job.future.careerorientation.exception.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;

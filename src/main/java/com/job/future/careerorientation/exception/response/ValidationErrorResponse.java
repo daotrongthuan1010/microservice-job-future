@@ -1,7 +1,6 @@
-package daothuan.web.com.travelsocial.exception.entityerror;
+package com.job.future.careerorientation.exception.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import daothuan.web.com.travelsocial.validation.Validation;
 import java.util.List;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
@@ -24,23 +23,24 @@ public class ValidationErrorResponse {
   private final List<String> errorMessages;
 
   @JsonProperty("validationErrors")
-  private final ValidationErrors  validationErrors;
+  private final ValidationErrors validationErrors;
 
   @Getter
   @Builder
-  public static class ValidationError{
+  public static class ValidationErrors {
 
     @JsonProperty("title")
     private final String title;
 
     @JsonProperty("errors")
-    private final List<Error> errors;
+    private final List<Errors> errors;
   }
 
   @Getter
   @Builder
   @EqualsAndHashCode
-  public static class Error{
+  public static class Errors {
+
     @JsonProperty("name")
     private final String name;
 
