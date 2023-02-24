@@ -1,5 +1,6 @@
 package com.job.future.careerorientation.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -28,13 +29,19 @@ public class User extends AuditLog {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
+  @Column(name = "user_name")
   private String username;
 
+  @Column(name = "password")
   private String password;
 
+  @Column(name = "email")
   private String email;
 
-  private String tokenUserId;
+  @Column(name = "name")
+  private String fullName;
+
+
 
 
 }

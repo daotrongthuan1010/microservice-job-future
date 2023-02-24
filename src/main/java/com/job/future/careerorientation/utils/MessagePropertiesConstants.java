@@ -22,7 +22,6 @@ public class MessagePropertiesConstants {
   public static final String RESPONSE_404 = "response.jakarta.message.404";
 
   public static final String RESPONSE_409 = "response.jakarta.message.409";
-
   public static final String RESPONSE_500 = "response.jakarta.message.500";
 
 

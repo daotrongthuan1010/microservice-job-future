@@ -23,20 +23,18 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class JobRequirement extends AuditLog {
-
+public class Rating extends AuditLog {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
+
+  @Column(name = "point_rating")
+  private Double point;
 
   @Column(name = "content")
   private String content;
 
   @Column(name = "description")
   private String description;
-
-  @Column(name = "job_category_id")
-  private Long jobCategoryId;
-
 
 }

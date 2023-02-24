@@ -1,5 +1,6 @@
 package com.job.future.careerorientation.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -28,10 +29,13 @@ public class Trend {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
+  @Column(name = "name")
   private String name;
 
+  @Column(name = "career_post_id")
   private Long careerPostId;
 
+  @Column(name = "school_id")
   private Long schoolId;
 
 

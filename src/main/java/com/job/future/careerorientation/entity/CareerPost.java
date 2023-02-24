@@ -1,5 +1,6 @@
 package com.job.future.careerorientation.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -28,16 +29,22 @@ public class CareerPost extends AuditLog {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
+  @Column(name = "title_post")
   private String title;
 
+  @Column(name ="content_post")
   private String content;
 
+  @Column(name = "views")
   private Long views;
 
+  @Column(name = "rating")
   private Integer rating;
 
+  @Column(name = "user_id")
   private Long userId;
 
+  @Column(name = "career_path_id")
   private Long careerPathId;
 
 }

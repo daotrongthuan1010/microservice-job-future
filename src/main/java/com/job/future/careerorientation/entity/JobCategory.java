@@ -9,6 +9,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.data.relational.core.mapping.Column;
 
 /**
  * @author thuandao1010
@@ -28,6 +29,7 @@ public class JobCategory extends AuditLog {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
+  @Column(value = "name_category_job")
   private String nameCategoryJob;
 
 

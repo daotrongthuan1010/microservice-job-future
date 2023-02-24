@@ -11,32 +11,28 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-/**
- * @author thuandao1010
- * @version 1.0
- * @since 2023-02-11
- */
-
 @Entity
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class JobRequirement extends AuditLog {
+public class Like {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  @Column(name = "content")
-  private String content;
+  @Column(name = "user_id")
+  private Long userId;
 
-  @Column(name = "description")
-  private String description;
+  @Column(name = "id_content")
+  private Long idContent;
 
-  @Column(name = "job_category_id")
-  private Long jobCategoryId;
+  @Column(name = "type_like")
+  private String typeLike;
 
+  @Column(name = "status_like")
+  private String statusLike;
 
 }
