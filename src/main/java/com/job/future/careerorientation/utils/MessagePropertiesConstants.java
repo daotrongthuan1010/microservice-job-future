@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class MessagePropertiesConstants {
 
+  //Check valition input to screen.
   public static final String RESPONSE_VALIDATION_400 = "response.jakarta.message.validation.400";
 
   public static final String RESPONSE_400 = "response.jakarta.message.400";
@@ -19,9 +20,11 @@ public class MessagePropertiesConstants {
 
   public static final String RESPONSE_403 = "response.jakarta.message.403";
 
+  //Check not found
   public static final String RESPONSE_404 = "response.jakarta.message.404";
 
   public static final String RESPONSE_409 = "response.jakarta.message.409";
+  //Check error
   public static final String RESPONSE_500 = "response.jakarta.message.500";
 
 

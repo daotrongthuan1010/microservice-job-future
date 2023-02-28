@@ -32,7 +32,7 @@ public class CareerPost extends AuditLog {
   @Column(name = "title_post")
   private String title;
 
-  @Column(name ="content_post")
+  @Column(name = "content_post")
   private String content;
 
   @Column(name = "views")

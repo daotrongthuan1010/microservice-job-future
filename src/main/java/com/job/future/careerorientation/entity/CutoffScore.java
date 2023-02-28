@@ -29,7 +29,7 @@ public class CutoffScore extends AuditLog {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  @Column(name ="school_id")
+  @Column(name = "school_id")
   private Long schoolId;
 
   @Column(name = "job_category_id")

@@ -1,5 +1,6 @@
 package com.job.future.careerorientation.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -27,14 +28,19 @@ public class School {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
+  @Column(name = "name")
   private String name;
 
+  @Column(name = "location")
   private String location;
 
+  @Column(name = "description")
   private String description;
 
+  @Column(name = "job_category_id")
   private Long jobCategoryId;
 
+  @Column(name = "link_school")
   private String linkSchool;
 
 }

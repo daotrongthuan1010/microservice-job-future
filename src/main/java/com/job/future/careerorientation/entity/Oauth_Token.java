@@ -1,5 +1,6 @@
 package com.job.future.careerorientation.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -29,13 +30,18 @@ public class Oauth_Token extends AuditLog {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  private String user_id;
+  @Column(name = "user_id")
+  private String userId;
 
+  @Column(name = "provider")
   private String provider;
 
-  private String access_token;
+  @Column(name = "access_token")
+  private String accessToken;
 
-  private String refresh_token;
+  @Column(name = "refresh_token")
+  private String refreshToken;
 
+  @Column(name = "expires")
   private LocalDateTime expires;
 }
