@@ -14,11 +14,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CareerRepository extends JpaRepository<Career, Long> {
 
-  @Override
-  Optional<Career> findById(Long aLong);
 
-  @Override
-  List<Career> findAllById(Iterable<Long> longs);
 
 
 }
